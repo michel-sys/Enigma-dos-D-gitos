@@ -25,7 +25,10 @@ function chutar() {
     atualizarPontuacao();
     resetarJogo();
   } else {
-    let mensagem = chute < numero ? "O número é maior que " + chute + '!' : "O número é menor que " + chute + "!";
+    let mensagem =
+      chute < numero
+        ? "O número é maior que " + chute + "!"
+        : "O número é menor que " + chute + "!";
     exibirMensagem(mensagem, "errado");
     if (tentativas == 3) {
       exibirMensagem(
